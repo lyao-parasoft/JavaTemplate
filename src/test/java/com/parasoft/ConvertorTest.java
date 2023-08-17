@@ -26,4 +26,11 @@ class ConvertorTest {
         String result = convertor.convertToString(3);
         assertEquals("3", result);
     }
+
+    @Test
+    void name() {
+        Convertor convertor = new Convertor();
+        String name = convertor.name();
+        assertEquals("number to string convertor", name);
+    }
 }
