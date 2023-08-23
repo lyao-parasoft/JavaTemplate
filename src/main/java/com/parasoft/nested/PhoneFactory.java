@@ -21,11 +21,6 @@ public class PhoneFactory {
         private String name;
         private Brand brand;
 
-        public Phone() {
-            this.name = "default";
-            this.brand = DEFAULT;
-        }
-
         public Phone(String name, Brand brand) {
             this.name = name;
             this.brand = brand;

@@ -12,5 +12,6 @@ class PhoneFactoryTest {
         assertEquals("iphone4", iphone4.getName());
         assertEquals(PhoneFactory.Brand.APPLE, iphone4.getBrand());
         assertEquals("name: iphone4, brand: APPLE", iphone4.toString());
+        iphone4.call911();
     }
 }
