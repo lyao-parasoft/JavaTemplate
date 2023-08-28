@@ -1,3 +1,4 @@
+import com.parasoft.interfaces2.ICalculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,7 +15,7 @@ class CalculatorTest {
     @Test
     void testMinus() {
         Calculator calculator = new Calculator();
-        int result = calculator.minus(2, 1);
+        int result = ICalculator.minus(2, 1);
         assertEquals(1, result);
     }
 }
