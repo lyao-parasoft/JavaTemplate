@@ -10,6 +10,7 @@ public class Convertorm implements IConvertor {
 
     public String nickname() {
         return "number to string convertor";
+        System.out.println("This is for luffy ");
     }
 
     @Override
