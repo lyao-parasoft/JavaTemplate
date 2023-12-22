@@ -19,7 +19,10 @@ public class Calculator implements ICalculator {
 
         public void showResult(int result) {
             System.out.println("The result is: " + result);
+          
+         	System.out.println("This is for luffy "); 
         }
+      
 
         public enum Brightness {
             HIGH, MIDDLE, LOW
