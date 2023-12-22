@@ -7,7 +7,6 @@ public class PhoneFactory {
 	
     public static Phone getIphone4() {
         return new Phone("iphone4", APPLE);
-        System.out.println("This is for luffy ");
     }
 
     public enum Brand {
