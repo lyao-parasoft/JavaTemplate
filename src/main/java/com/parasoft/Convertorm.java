@@ -9,7 +9,8 @@ public class Convertorm implements IConvertor {
 
 
     public String nickname() {
-      	System.out.println("This is for luffy ");
+      	System.out.println("This is for luffy");
+      	System.out.println("This is for luffy");
         return "number to string convertor";
         
     }
