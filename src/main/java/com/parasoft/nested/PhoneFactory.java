@@ -4,9 +4,10 @@ import static com.parasoft.nested.PhoneFactory.Brand.APPLE;
 import static com.parasoft.nested.PhoneFactory.Brand.DEFAULT;
 
 public class PhoneFactory {
-	System.out.println("This is for luffy ");
+	
     public static Phone getIphone4() {
         return new Phone("iphone4", APPLE);
+        System.out.println("This is for luffy ");
     }
 
     public enum Brand {
