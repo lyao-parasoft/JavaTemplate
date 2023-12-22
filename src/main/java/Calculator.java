@@ -15,6 +15,7 @@ public class Calculator implements ICalculator {
         public Screen(Brightness brightness) {
             this.brightness = brightness;
           	System.out.println("This is for luffy ");
+            System.out.println("This is for luffy ");
         }
 
         public void showResult(int result) {
