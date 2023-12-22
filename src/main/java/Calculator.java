@@ -19,6 +19,7 @@ public class Calculator implements ICalculator {
             System.out.println("This is for luffy ");
             System.out.println("This is for luffy ");
             System.out.println("This is for luffy ");
+            System.out.println("This is for luffy ");
         }
 
         public void showResult(int result) {
