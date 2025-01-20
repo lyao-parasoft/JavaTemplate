@@ -1,0 +1,47 @@
+name: Parasoft Coverage
+
+on:
+  # Trigger the workflow on push or pull request events but only for the master (main) branch.
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+jobs:
+  build:
+    # Specifies the name of the job.
+    name: Parasoft Coverage Action
+
+    # Specifies the type of runner that the job will run on.
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:
+      # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Generate Parasoft coverage report.
+      # This is an example using the Parasoft Jtest Action; you can replace it with other actions as needed.
+      - name: Parasoft Jtest
+        uses: parasoft/run-jtest-action@2.0.0
+        with:
+          # Path to the jtest installation directory, which contains dottestcli.exe.
+          installDir: D:/parasoft-tools/All/2024.2.0/jtest
+          # URL of the test configuration to be used for analysis.
+          testConfig: builtin://Unit Tests
+          # Path to the directory where the report will be created.
+          reportDir: build/report-2024.2.0/jtest/junit
+
+      # Execute the Parasoft Coverage action.
+      - name: Parasoft Coverage
+        uses: parasoft/parasoft-coverage-action@1.0.0
+        with:
+            # Path or minimatch pattern to locate Parasoft coverage report files. If using a relative path, it is relative to the GitHub workspace directory.
+            report: 'build/report-2024.2.0/jtest/junit/coverage.xml'
+            # Root path to the Parasoft tool or Java installation required to locate the Java environment for report processing. If not specified, the GitHub Action will attempt to use the path from the JAVA_HOME environment variable.
+            # parasoftToolOrJavaRootPath: 'path/to/java';
