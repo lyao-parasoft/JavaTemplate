@@ -36,10 +36,13 @@ jobs:
         with:
           # Path to the jtest installation directory, which contains dottestcli.exe.
           installDir: D:/parasoft-tools/All/2024.2.0/jtest
+          #Uses the jtest.data.json generated with the Maven command in the previous step
+          input: target/jtest/jtest.data.json
           # URL of the test configuration to be used for analysis.
           testConfig: builtin://Unit Tests
           # Path to the directory where the report will be created.
           reportDir: build/report-2024.2.0/jtest/junit
+  
 
       # Execute the Parasoft Coverage action.
       - name: Parasoft Coverage
