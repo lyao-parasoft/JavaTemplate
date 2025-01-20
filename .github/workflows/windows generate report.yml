@@ -24,7 +24,11 @@ jobs:
       # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
       - name: Checkout repository
         uses: actions/checkout@v4
-
+        
+     # Generates the jtest.data.json input file.
+      - name: Create input for Jtest
+        run: ./mvnw clean install jtest:jtest "-Djtest.skip=true" 
+        
       # Generate Parasoft coverage report.
       # This is an example using the Parasoft Jtest Action; you can replace it with other actions as needed.
       - name: Parasoft Jtest
