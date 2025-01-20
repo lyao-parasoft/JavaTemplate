@@ -39,7 +39,7 @@ jobs:
 
       # Execute the Parasoft Coverage action.
       - name: Parasoft Coverage
-        uses: parasoft/parasoft-coverage-action@1.0.0
+        uses: parasoft/parasoft-coverage-action@master
         with:
             # Path or minimatch pattern to locate Parasoft coverage report files. If using a relative path, it is relative to the GitHub workspace directory.
             report: 'build/report-2024.2.0/jtest/junit/coverage.xml'
