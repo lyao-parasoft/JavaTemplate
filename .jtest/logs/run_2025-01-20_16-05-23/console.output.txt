@@ -1,0 +1,244 @@
+[ 1/20/25, 4:05 PM - Initialized console 'Jtest']
+DTP Services: Loading available services from https://dtp.parasoftcn.com//grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://dtp.parasoftcn.com//grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+License: Initializing network license for Jtest 10.7
+License: Activating Custom Edition
+License: Checking features
+License: Main Jtest feature: License is valid
+License: Unit Test feature: License is valid
+License: Static Analysis feature: License is valid
+License: Coverage feature: License is valid
+License: Flow Analysis feature: License is valid
+License: Security Rules feature: License is valid
+License: Unit Test Spring Framework feature: License is valid
+License: CWE Rules feature: License is valid
+License: OWASP Rules feature: License is valid
+License: PCI DSS Rules feature: License is valid
+License: DISA STIG Rules feature: License is valid
+License: DTP Publish feature: License is valid
+License: Automation feature: License is valid
+License: Desktop Command Line feature: License is valid
+License: Activation finished: License is valid
+License: Machine id WIN32-7397ed43 (Default)
+Sending usage data is disabled, use usage.reporting.enabled to enable
+Rule update service scanning directory: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\.jtest\rules\team for provider com.parasoft.jtest.rules.rulewizard.team
+using categories description file: file:/D:/Github-runner/javatemplate/_work/JavaTemplate/JavaTemplate/.jtest/rules/team/categories.properties
+Rules have changed, performing update
+Rules refresh service, found rules: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\.jtest\rules\team
+Rules refresh service, successfully written rules descriptions file: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\.jtest\rules\team\rules.xml
+Rule update service scanning directory: D:\parasoft-tools\All\2024.2.0\jtest\rules\user for provider com.parasoft.jtest.rules.rulewizard.user
+Rules file is up to date, skipped update
+No shared rule providers registered.
+Configuration: Unit Tests (builtin://Unit Tests).
+Command line: jtestcli -config builtin://Unit Tests -property report.format=xml,html,sarif -report build/report-2024.2.0/jtest/junit -data target/jtest/jtest.data.json
+[ 0%] > Computing testing context.
+Project "com.parasoft:project-with-default-package" in json file contains compilation with unsupported Java version 
+Project "com.parasoft:project-with-default-package" in json file contains compilation with unsupported Java version 
+Excluded element: runtime_coverage
+Excluded element: TEST-CalculatorTest.xml
+Excluded element: TEST-com.parasoft.another.ConvertorTest.xml
+Excluded element: TEST-com.parasoft.ConvertorTest.xml
+Excluded element: TEST-com.parasoft.nested.PhoneFactoryTest.xml
+Excluded test element: CalculatorTest.java
+Excluded test element: ConvertorTest.java
+Excluded test element: ConvertorTest.java
+Excluded test element: PhoneFactoryTest.java
+Excluded test element: CalculatorTest.java
+Excluded test element: ConvertorTest.java
+Excluded test element: ConvertorTest.java
+Excluded test element: PhoneFactoryTest.java
+Number of excluded elements: 13.
+[ 2%] < Computing testing context.: 100% 
+[ 2%] > PreAnalysis
+[ 2%] < PreAnalysis
+[ 2%] > Scope
+[ 2%] > Scope > Resources Filter
+[ 2%] > Analysis
+[ 2%] > Analysis > Scope Analyzer
+com.parasoft:project-with-default-package: no compiled classes found.
+[ 2%] > Results
+[ 2%] > Results > Metrics processor
+[ 2%] > Results > Unified rules post processor
+[ 2%] > Results > Scope Processor
+[ 2%] > Results > Duplicates Processor
+[ 2%] > Results > Tokens Mismatch Filter Processor
+[ 2%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+[ 2%] > Results > Coverage Processor
+[ 2%] > Results > Metadata Processor
+[ 2%] > Results > Author Processor
+[ 2%] > Results > Suppression Processor
+[ 2%] > Results > Goals Processor
+[ 2%] > Results > Violations Scope Decorator
+[ 2%] > Analysis
+[ 2%] > Analysis > JUnit
+[ 2%] > Results
+[ 2%] > Results > Metrics processor
+[ 2%] > Results > Unified rules post processor
+[ 2%] > Results > Scope Processor
+[ 2%] > Results > Duplicates Processor
+[ 2%] > Results > Tokens Mismatch Filter Processor
+[ 2%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+[ 2%] > Results > Coverage Processor
+[ 2%] > Results > Metadata Processor
+[ 2%] > Results > Author Processor
+[ 2%] > Results > Suppression Processor
+[ 2%] > Results > Goals Processor
+[ 2%] > Results > Violations Scope Decorator
+[ 2%] > Reporting
+[ 2%] > Scope > Resources Filter > Checking resources to exclude
+[ 2%] < Scope > Resources Filter > Checking resources to exclude: 6 of 6 
+[ 2%]   Scope: accepted /com.parasoft:project-with-default-package/.../Calculator.java
+[ 2%]   Scope: accepted /com.parasoft:project-with-default-package/.../Convertor.java
+[ 2%]   Scope: accepted /com.parasoft:project-with-default-package/.../Convertor.java
+[ 3%]   Scope: accepted /com.parasoft:project-with-default-package/.../IConvertor.java
+[ 4%]   Scope: accepted /com.parasoft:project-with-default-package/.../ICalculator.java
+[ 5%]   Scope: accepted /com.parasoft:project-with-default-package/.../PhoneFactory.java
+[ 6%] < Scope > Resources Filter: rejected 0 of 6 analyzed inputs 
+[ 6%] < Scope: rejected 0 of 6 analyzed inputs                                    >>> Scope time 0s
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../Calculator.java
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../Convertor.java
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../Convertor.java
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../IConvertor.java
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../ICalculator.java
+[ 6%]   Analysis > Scope Analyzer: analyzed /com.parasoft:project-with-default-package/.../PhoneFactory.java
+[ 6%] < Analysis > Scope Analyzer: analyzed 6 
+[60%] < Analysis: found 0 violations                                              >>> Analysis time 0.07s
+[60%] < Results > Metrics processor: processed 0 accepted violations 
+[60%] < Results > Unified rules post processor: processed 0 accepted violations 
+[60%] < Results > Scope Processor: removed 0 of 0 violations 
+[60%] < Results > Duplicates Processor: removed 0 of 0 violations  
+[60%] < Results > Tokens Mismatch Filter Processor: processed 0 accepted violations 
+[60%] < Results > Rule Limit Processor: removed 0 of 0 violations  
+[60%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[60%] < Results > Metadata Processor: DTP metadata available for 0 of 0 applicable findings  
+[63%] < Results > Author Processor: reassigned 0 of 0 accepted violations 
+[65%] < Results > Suppression Processor: suppressed 0 of 0 accepted violations 
+[72%] < Results > Goals Processor: processed 0 accepted violations 
+[78%] < Results > Violations Scope Decorator: processed 0 accepted violations 
+[83%] < Results: processed 0 accepted violations                                  >>> Results time 0s
+[83%]   Analysis: analyzed /com.parasoft:project-with-default-package/.../runtime_coverage
+[83%]   Analysis > JUnit: found 0 violations in /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[83%]   Analysis: analyzed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[83%]   Analysis > JUnit: found 0 violations in /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[84%]   Results > Metrics processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[84%]   Analysis: analyzed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[84%]   Analysis > JUnit: found 0 violations in /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[87%]   Results > Metrics processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[87%]   Analysis: analyzed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[87%]   Analysis > JUnit: found 0 violations in /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[88%]   Results > Unified rules post processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[88%]   Results > Scope Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[88%]   Results > Metrics processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[88%]   Analysis: analyzed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[88%]   Results > Unified rules post processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[88%]   Results > Scope Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[88%]   Results > Metrics processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Analysis > JUnit: found 0 violations on analyzed 4 of 6 inputs, skipped 1       >>> JUnit time 0.01s
+[92%] < Analysis: found 0 violations                                              >>> Analysis time 0.08s
+[92%]   Results > Duplicates Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Unified rules post processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Scope Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Metrics processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Duplicates Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Unified rules post processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   Results > Scope Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Metrics processor: processed 0 accepted violations 
+[92%]   Results > Tokens Mismatch Filter Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Rule Limit Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Duplicates Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Unified rules post processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Scope Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Tokens Mismatch Filter Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Rule Limit Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Duplicates Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Unified rules post processor: processed 0 accepted violations 
+[92%] < Results > Scope Processor: removed 0 of 0 violations 
+[92%]   Results > Tokens Mismatch Filter Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Rule Limit Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Duplicates Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Tokens Mismatch Filter Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   Results > Rule Limit Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Duplicates Processor: removed 0 of 0 violations  
+[92%]   Results > Tokens Mismatch Filter Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Rule Limit Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Coverage Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%] < Results > Tokens Mismatch Filter Processor: processed 0 accepted violations 
+[92%] < Results > Rule Limit Processor: removed 0 of 0 violations  
+[92%]   Results > Coverage Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Coverage Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Coverage Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   Results > Coverage Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[92%]   Results > Metadata Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Metadata Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Author Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Metadata Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Author Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Metadata Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   Results > Suppression Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Author Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Metadata Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Suppression Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Author Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Metadata Processor: DTP metadata available for 0 of 0 applicable findings  
+[92%]   Results > Goals Processor: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Suppression Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Author Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Goals Processor: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Suppression Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Author Processor: reassigned 0 of 0 accepted violations 
+[92%]   Results > Violations Scope Decorator: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results: processed /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   finished /com.parasoft:project-with-default-package/.../runtime_coverage
+[92%]   Results > Goals Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Suppression Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Violations Scope Decorator: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results: processed /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   finished /com.parasoft:project-with-default-package/.../TEST-CalculatorTest.xml
+[92%]   Results > Goals Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Suppression Processor: suppressed 0 of 0 accepted violations 
+[92%]   Results > Violations Scope Decorator: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   finished /com.parasoft:project-with-default-package/.../TEST-com.parasoft.ConvertorTest.xml
+[92%]   Results > Goals Processor: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results > Violations Scope Decorator: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   Results: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%]   finished /com.parasoft:project-with-default-package/.../TEST-com.parasoft.another.ConvertorTest.xml
+[92%] < Results > Goals Processor: processed 0 accepted violations 
+[92%]   Results > Violations Scope Decorator: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   Results: processed /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%]   finished /com.parasoft:project-with-default-package/.../TEST-com.parasoft.nested.PhoneFactoryTest.xml
+[92%] < Results > Violations Scope Decorator: processed 0 accepted violations 
+[92%] < Results: processed 0 accepted violations                                  >>> Results time 0s
+[92%] < Reporting: reported 0 accepted violations                                 >>> Reporting time 0.12s
+[92%]                                                                             >>> Total time 2.31s
+[92%] > Finalizing reporters.
+Files in scope: 6
+Rules violated: 0/0
+Metrics enabled: 0
+Static analysis violations: 0
+Suppressed violations: 0
+Unit Tests failures: 0
+Executed test cases: 0
+Sending reports by mail is disabled, use report.mail.enabled setting to enable.
+Publishing reports to DTP is disabled, use report.dtp.publish setting to enable.
+Coverage: 0/0 lines (0% covered)
+Running time in seconds : 6
+[92%]   Finalizing reporters.: 12% 
+The following setup problems have been encountered during analysis:
+  Could not report coverage
+    - Could not find coverage files, probably instrumentation was not done.
+  Other setup problems:
+    - No compiled classes were found in the whole testing scope. The project was probably not compiled before Jtest agent was attached.
+  Jtest was unable to obtain test results.
+    - Jtest was unable to obtain test results because the tests were executed without the Jtest agent. Ensure you add the Jtest agent to your test execution command line.
+Generated XML report: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.2.0\jtest\junit\report.xml
+Generated HTML report: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.2.0\jtest\junit\report.html
+Generated JSON SARIF (Static Analysis Results Interchange Format) report: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.2.0\jtest\junit\report.sarif
+[93%]   Finalizing reporters.: 25% 
+Generated report archive: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.2.0\jtest\junit\report.zip
+[97%] < Finalizing reporters.: 100% 

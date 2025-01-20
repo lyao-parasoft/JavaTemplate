@@ -1,0 +1,18 @@
+Type: Coverage
+Message: Could not report coverage
+Severity: 2
+ErrorList: 
+   Could not find coverage files, probably instrumentation was not done.
+
+Type: OtherSetupProblem
+Message: Other setup problems:
+Severity: 2
+ErrorList: 
+   No compiled classes were found in the whole testing scope. The project was probably not compiled before Jtest agent was attached.
+
+Type: JUnitTestsResultsSetupProblem
+Message: Jtest was unable to obtain test results.
+Severity: 2
+ErrorList: 
+   Jtest was unable to obtain test results because the tests were executed without the Jtest agent. Ensure you add the Jtest agent to your test execution command line.
+

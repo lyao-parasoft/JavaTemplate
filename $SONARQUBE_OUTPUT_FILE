@@ -1,0 +1,133 @@
+INFO: Scanner configuration file: D:\Sonarqube\sonar_integration_test_example_projects\lib\sonar-scanner-5.0.1.3006-windows\bin\..\conf\sonar-scanner.properties
+INFO: Project root configuration file: D:\reports\projects\javaprojecttemplate\sonar-project.properties
+INFO: SonarScanner 5.0.1.3006
+INFO: Java 17.0.7 Eclipse Adoptium (64-bit)
+INFO: Windows 11 10.0 amd64
+INFO: User cache: C:\Users\ysl13\.sonar\cache
+INFO: Analyzing on SonarQube server 10.6.0.92116
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+INFO: Load global settings
+INFO: Load global settings (done) | time=151ms
+INFO: Server id: 147B411E-AZBTcs3uqLCNGVbQAbjc
+INFO: Loading required plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=140ms
+INFO: Load/download plugins
+INFO: Load/download plugins (done) | time=63ms
+INFO: Process project properties
+INFO: Process project properties (done) | time=8ms
+INFO: Project key: LY-Javatemplate-static-2024
+INFO: Base dir: D:\reports\projects\javaprojecttemplate
+INFO: Working dir: D:\reports\projects\javaprojecttemplate\.scannerwork
+INFO: Load project settings for component key: 'LY-Javatemplate-static-2024'
+INFO: Load project settings for component key: 'LY-Javatemplate-static-2024' (done) | time=122ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=214ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=37364ms
+INFO: Load analysis cache
+INFO: Load analysis cache (467 bytes) | time=125ms
+WARN: The properties 'sonar.login' and 'sonar.password' are deprecated and will be removed in the future. Please pass a token with the 'sonar.token' property instead.
+INFO: Preprocessing files...
+INFO: 1 language detected in 11 preprocessed files
+INFO: 0 files ignored because of scm ignore settings
+INFO: Loading plugins for detected languages
+INFO: Load/download plugins
+INFO: Load/download plugins (done) | time=18ms
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=133ms
+INFO: Indexing files...
+INFO: Project configuration:
+INFO: 11 files indexed
+INFO: Quality profile for java: Parasoft Jtest
+INFO: ------------- Run sensors on module LY-Javatemplate-static-2024
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=120ms
+INFO: Sensor JavaSensor [java]
+WARN: Invalid value for 'sonar.java.jdkHome' property, defaulting to runtime JDK.
+Configured location does not exists: 'D:\Soft\Java\jdk-11'
+WARN: Invalid value for 'sonar.java.jdkHome' property, defaulting to runtime JDK.
+Configured location does not exists: 'D:\Soft\Java\jdk-11'
+INFO: Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+INFO: Using ECJ batch to parse 11 Main java source files with batch size 425 KB.
+INFO: Starting batch processing.
+INFO: The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+INFO: 100% analyzed
+INFO: Batch processing: Done.
+INFO: Did not optimize analysis for any files, performed a full analysis for all 11 files.
+WARN: Dependencies/libraries were not provided for analysis of SOURCE files. The 'sonar.java.libraries' property is empty. Verify your configuration, as you might end up with less precise results.
+WARN: Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+INFO: No "Test" source files to scan.
+INFO: No "Generated" source files to scan.
+INFO: Sensor JavaSensor [java] (done) | time=1603ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing [D:\reports\projects\javaprojecttemplate\target\surefire-reports]
+INFO: Sensor SurefireSensor [java] (done) | time=119ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=5ms
+INFO: Sensor IaC Docker Sensor [iac]
+INFO: 0 source files to be analyzed
+INFO: 0/0 source files have been analyzed
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=199ms
+INFO: Sensor TextAndSecretsSensor [text]
+INFO: Available processors: 20
+INFO: Using 20 threads for analysis.
+INFO: The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test" or "tests"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+INFO: Using git CLI to retrieve untracked files
+INFO: Analyzing language associated files and files included via "sonar.text.inclusions" that are tracked by git
+INFO: 11 source files to be analyzed
+INFO: 11/11 source files have been analyzed
+INFO: Sensor TextAndSecretsSensor [text] (done) | time=1568ms
+INFO: ------------- Run sensors on project
+INFO: Sensor Parasoft Jtest Importer [parasoft]
+INFO: No Parasoft unit test report(s) specified
+INFO: Parsing Parasoft static analysis XML report: D:\reports\projects\javaprojecttemplate\build\report-2024.1\jtest\static\report.xml
+INFO: Properties used in importResults {}
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\Calculator.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\Convertor.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\another\Convertor.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\differentViolations\GenerateViolations.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\interfaces\IConvertor.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\interfaces2\ICalculator.java
+INFO: Added location with finding(s): D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\nested\PhoneFactory.java
+INFO: 413 findings imported
+INFO: Created 92 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\differentViolations\GenerateViolations.java
+INFO: No findings for: D:\reports\projects\javaprojecttemplate\src\test\java\com\parasoft\another\ConvertorTest.java
+INFO: Created 17 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\interfaces2\ICalculator.java
+INFO: Created 36 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\another\Convertor.java
+INFO: No findings for: D:\reports\projects\javaprojecttemplate\src\test\java\com\parasoft\ConvertorTest.java
+INFO: Created 93 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\Calculator.java
+INFO: No findings for: D:\reports\projects\javaprojecttemplate\src\test\java\CalculatorTest.java
+INFO: Created 36 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\Convertor.java
+INFO: Created 127 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\nested\PhoneFactory.java
+INFO: No findings for: D:\reports\projects\javaprojecttemplate\src\test\java\com\parasoft\nested\PhoneFactoryTest.java
+INFO: Created 12 issues in: D:\reports\projects\javaprojecttemplate\src\main\java\com\parasoft\interfaces\IConvertor.java
+INFO: Sensor Parasoft Jtest Importer [parasoft] (done) | time=3397ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=28ms
+INFO: Sensor Java CPD Block Indexer
+INFO: Sensor Java CPD Block Indexer (done) | time=68ms
+INFO: CPD Executor 6 files had no CPD blocks
+INFO: CPD Executor Calculating CPD for 5 files
+INFO: CPD Executor CPD calculation finished (done) | time=17ms
+INFO: SCM revision ID '2dd8cf3adbb6b9f2c5fa6f73333e1b571fed48cd'
+INFO: Analysis report generated in 293ms, dir size=949.0 kB
+INFO: Analysis report compressed in 351ms, zip size=105.1 kB
+INFO: Analysis report uploaded in 214ms
+INFO: ANALYSIS SUCCESSFUL, you can find the results at: http://192.168.3.4:9002/dashboard?id=LY-Javatemplate-static-2024
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://192.168.3.4:9002/api/ce/task?id=85d5feca-229a-4dd7-8cc4-4a148fa5138d
+INFO: Analysis total time: 49.495 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 51.060s
+INFO: Final Memory: 19M/68M
+INFO: ------------------------------------------------------------------------

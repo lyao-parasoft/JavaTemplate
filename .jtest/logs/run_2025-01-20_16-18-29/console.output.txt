@@ -1,0 +1,144 @@
+DTP Services: Loading available services from https://dtp.parasoftcn.com/grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://dtp.parasoftcn.com/grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+License: Initializing network license for Jtest 10.7
+License: Activating Custom Edition
+License: Checking features
+License: Main Jtest feature: License is valid
+License: Unit Test feature: License is valid
+License: Static Analysis feature: License is valid
+License: Coverage feature: License is valid
+License: Flow Analysis feature: License is valid
+License: Security Rules feature: License is valid
+License: Unit Test Spring Framework feature: License is valid
+License: CWE Rules feature: License is valid
+License: OWASP Rules feature: License is valid
+License: PCI DSS Rules feature: License is valid
+License: DISA STIG Rules feature: License is valid
+License: DTP Publish feature: License is valid
+License: Automation feature: License is valid
+License: Desktop Command Line feature: License is valid
+License: Activation finished: License is valid
+License: Machine id WIN32-7397ed43 (Default)
+Sending usage data is disabled, use usage.reporting.enabled to enable
+Rule update service scanning directory: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\.jtest\rules\team for provider com.parasoft.jtest.rules.rulewizard.team
+using categories description file: file:/D:/Github-runner/javatemplate/_work/JavaTemplate/JavaTemplate/.jtest/rules/team/categories.properties
+Rules file is up to date, skipped update
+Rule update service scanning directory: D:\parasoft-tools\All\2024.1.1\Jtest-2024.1.1\rules\user for provider com.parasoft.jtest.rules.rulewizard.user
+Rules file is up to date, skipped update
+No shared rule providers registered.
+Configuration: Unit Tests (builtin://Unit Tests).
+Command line: jtestcli -config builtin://Unit Tests -data javaprojecttemplate.data.json -settings localsettings.properties -report build/report-2024.1.0-tools/jtest/ut
+[ 0%] > Computing testing context.
+[ 2%] < Computing testing context.: 100% 
+[ 2%] > PreAnalysis
+[ 5%]   PreAnalysis: 100% 
+[ 5%] < PreAnalysis: 100% 
+[ 5%] > Scope
+[ 5%] > Scope > Resources Filter
+[ 5%] > Analysis
+[ 5%] > Analysis > Scope Analyzer
+[ 5%] > Results
+[ 5%] > Results > Metrics processor
+[ 5%] > Results > Unified rules post processor
+[ 5%] > Results > Scope Processor
+[ 5%] > Results > Duplicates Processor
+[ 5%] > Results > Tokens Mismatch Filter Processor
+[ 5%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+[ 5%] > Results > Coverage Processor
+[ 5%] > Results > Metadata Processor
+[ 5%] > Results > Author Processor
+[ 5%] > Results > Suppression Processor
+[ 5%] > Results > Goals Processor
+[ 5%] > Results > Violations Scope Decorator
+[ 5%] > Analysis
+[ 5%] > Analysis > JUnit
+[ 5%] > Results
+[ 5%] > Results > Metrics processor
+[ 5%] > Results > Unified rules post processor
+[ 5%] > Results > Scope Processor
+[ 5%] > Results > Duplicates Processor
+[ 5%] > Results > Tokens Mismatch Filter Processor
+[ 5%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+[ 5%] > Results > Coverage Processor
+[ 5%] > Results > Metadata Processor
+[ 5%] > Results > Author Processor
+[ 5%] > Results > Suppression Processor
+[ 5%] > Results > Goals Processor
+[ 5%] > Results > Violations Scope Decorator
+[ 5%] > Reporting
+[ 5%] > Scope > Resources Filter > Checking resources to exclude
+[ 5%] < Scope > Resources Filter > Checking resources to exclude: 6 of 6 
+[ 5%]   Scope: accepted /javaprojecttemplate/.../Calculator.java
+[ 5%]   Scope: accepted /javaprojecttemplate/.../Convertor.java
+[ 5%]   Scope: accepted /javaprojecttemplate/.../Convertor.java
+[ 6%]   Scope: accepted /javaprojecttemplate/.../IConvertor.java
+[ 7%]   Scope: accepted /javaprojecttemplate/.../ICalculator.java
+[ 8%]   Scope: accepted /javaprojecttemplate/.../PhoneFactory.java
+[ 9%] < Scope > Resources Filter: rejected 0 of 6 analyzed inputs 
+[ 9%] < Scope: rejected 0 of 6 analyzed inputs                                    >>> Scope time 0s
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../Calculator.java
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../Convertor.java
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../Convertor.java
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../IConvertor.java
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../ICalculator.java
+[ 9%]   Analysis > Scope Analyzer: analyzed /javaprojecttemplate/.../PhoneFactory.java
+[ 9%] < Analysis > Scope Analyzer: analyzed 6 
+[63%] < Analysis: found 0 violations                                              >>> Analysis time 0.04s
+[63%] < Results > Metrics processor: processed 0 accepted violations 
+[63%] < Results > Unified rules post processor: processed 0 accepted violations 
+[63%] < Results > Scope Processor: removed 0 of 0 violations 
+[63%] < Results > Duplicates Processor: removed 0 of 0 violations  
+[63%] < Results > Tokens Mismatch Filter Processor: processed 0 accepted violations 
+[63%] < Results > Rule Limit Processor: removed 0 of 0 violations  
+[63%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[63%] < Results > Metadata Processor: DTP metadata available for 0 of 0 applicable findings  
+[66%] < Results > Author Processor: reassigned 0 of 0 accepted violations 
+[68%] < Results > Suppression Processor: suppressed 0 of 0 accepted violations 
+[75%] < Results > Goals Processor: processed 0 accepted violations 
+[81%] < Results > Violations Scope Decorator: processed 0 accepted violations 
+[86%] < Results: processed 0 accepted violations                                  >>> Results time 0.01s
+[95%] < Analysis > JUnit: found 0 violations on analyzed 0 of 6 inputs, skipped 0       >>> JUnit time 0s
+[95%] < Analysis: found 0 violations                                              >>> Analysis time 0.04s
+[95%] < Results > Metrics processor
+[95%] < Results > Unified rules post processor
+[95%] < Results > Scope Processor
+[95%] < Results > Duplicates Processor
+[95%] < Results > Tokens Mismatch Filter Processor
+[95%] < Results > Rule Limit Processor
+[95%] < Results > Coverage Processor
+[95%] < Results > Metadata Processor
+[95%] < Results > Author Processor
+[95%] < Results > Suppression Processor
+[95%] < Results > Goals Processor
+[95%] < Results > Violations Scope Decorator
+[95%] < Results: processed 0 accepted violations                                  >>> Results time 0.01s
+[95%] < Reporting: reported 0 accepted violations                                 >>> Reporting time 0.12s
+[95%]                                                                             >>> Total time 1.98s
+[95%] > Finalizing reporters.
+Files in scope: 6
+Rules violated: 0/0
+Metrics enabled: 0
+Static analysis violations: 0
+Suppressed violations: 0
+Unit Tests failures: 0
+Executed test cases: 0
+Sending reports by mail is disabled, use report.mail.enabled setting to enable.
+Publishing reports to DTP is disabled, use report.dtp.publish setting to enable.
+Coverage: 0/0 lines (0% covered)
+Running time in seconds : 6
+[95%]   Finalizing reporters.: 12% 
+The following setup problems have been encountered during analysis:
+  The following dependencies do not exist:
+    - D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/junit-4.13.2.jar
+    - D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/servlet-api-2.4.jar
+  Could not report coverage
+    - Could not find coverage files, probably instrumentation was not done.
+Generated XML report: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.1.0-tools\jtest\ut\report.xml
+Generated HTML report: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.1.0-tools\jtest\ut\report.html
+[96%]   Finalizing reporters.: 25% 
+Generated report archive: D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate\build\report-2024.1.0-tools\jtest\ut\report.zip
+[100%] < Finalizing reporters.: 100% 

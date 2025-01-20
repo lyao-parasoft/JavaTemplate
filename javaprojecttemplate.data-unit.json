@@ -1,0 +1,26 @@
+{
+    "scheme_version": "1.2",
+    "type":       "classpath_project",
+    "name":       "javaprojecttemplate",
+    "location":    "${JSON_DIR}",
+    "compilations":    [
+        {
+            "sourcepath": [
+       "${JSON_DIR}/src/test/java/"
+            ],
+			"binarypath": [],
+            "classpath":  [
+      "C:/Users/ysl13/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar",
+      "C:/Users/ysl13/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"
+            ],
+            "bootpath":   [
+      "${jvm_prop:java.home}/lib/jrt-fs.jar"
+       ],
+            "encoding":   "UTF-8",
+            "sourcelevel": "1.8"
+        }
+    ],
+    "testoutcomes": [],
+    "generated_by": "Jtest",
+    "generator_version": "1.0"
+}   

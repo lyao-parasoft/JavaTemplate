@@ -1,0 +1,13 @@
+Type: DependencySetupProblem
+Message: The following dependencies do not exist:
+Severity: 0
+ErrorList: 
+   D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/junit-4.13.2.jar
+   D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/servlet-api-2.4.jar
+
+Type: Coverage
+Message: Could not report coverage
+Severity: 2
+ErrorList: 
+   Could not find coverage files, probably instrumentation was not done.
+

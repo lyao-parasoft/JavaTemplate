@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mergePnt id="setupProblems">
+  <SetupProblems>
+    <Problem msg="Could not report coverage" sev="2" totErrs="1" type="Coverage">
+      <ErrorList>
+        <Error val="Could not find coverage files, probably instrumentation was not done."/>
+      </ErrorList>
+    </Problem>
+    <Problem msg="The following dependencies do not exist:" sev="0" totErrs="2" type="DependencySetupProblem">
+      <ErrorList>
+        <Error val="D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/junit-4.13.2.jar"/>
+        <Error val="D:\Github-runner\javatemplate\_work\JavaTemplate\JavaTemplate/lib/servlet-api-2.4.jar"/>
+      </ErrorList>
+    </Problem>
+  </SetupProblems>
+</mergePnt>
